@@ -30,3 +30,21 @@ section {
 }
 
 h2 { color: #2c3e50; }
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}

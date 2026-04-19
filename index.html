@@ -5,100 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kauthar | IT Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Kauthar Bakubye</h1>
         <p>ICT Instructor | BSc. Applied IT Student</p>
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate ICT professional based in Uganda, specializing in computer literacy, laboratory training, and mobile app development.</p>
-    </section>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a versatile <strong>ICT Professional and Instructor</strong> based in Uganda, with a strong foundation in Systems Administration and Software Development. 
+                Currently a final-year Applied IT student at ISBAT University, I balance academic research in IoT with hands-on experience managing 
+                laboratory networks and training students in computer literacy.
+            </p>
+        </section>
 
-<section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <i class="fa-solid fa-network-wired"></i>
-            <p>Networking (Cisco/Thin Clients)</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-brands fa-android"></i>
-            <p>Android Dev (Kotlin/Java)</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-solid fa-chalkboard-user"></i>
-            <p>ICT Instruction</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-solid fa-shield-halved"></i>
-            <p>Cybersecurity & AI</p>
-        </div>
-    </div>
-</section>
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="project-card">
-    <h3>Smart E-Waste Management System</h3>
-    <p>An IoT-based system for efficient and sustainable disposal of electronic waste.</p>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programming & Web</h3>
+                    <p>Kotlin (Android Studio), JavaScript, HTML5, CSS3, Jetpack Compose</p>
+                </div>
+                <div class="skill-category">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Networking & Hardware</h3>
+                    <p>Cisco Switch Administration, Thin/Zero Client Configuration, Server-Client Networking, IoT (Arduino/ESP32)</p>
+                </div>
+                <div class="skill-category">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Professional Tools</h3>
+                    <p>Git, GitHub, VS Code, Microsoft Office Suite Expert, Hardware Troubleshooting</p>
+                </div>
+            </div>
+        </section>
 
-    <p><strong>Tech:</strong> IoT, Sensors, Data Analysis</p>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-container">
+                
+                <div class="project-card">
+                    <h3>Network Health Dashboard</h3>
+                    <div class="tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <p>A responsive monitoring tool designed to visualize real-time network connectivity and system health.</p>
+                    <div class="project-links">
+                        <a href="https://Bakubye.github.io/network-dashboard/" target="_blank" class="btn primary">Live Demo</a>
+                        <a href="https://github.com/Bakubye/network-dashboard" target="_blank" class="btn secondary">View Code</a>
+                    </div>
+                </div>
 
-  <div class="project-card">
-    <h3>Network Dashboard</h3>
-    <p>Monitoring system for network health.</p>
-    <a href="https://Bakubye.github.io/network-dashboard/" target="_blank">View Live Demo</a>
-</div>
+                <div class="project-card">
+                    <h3>Smart E-Waste IoT System</h3>
+                    <div class="tags">
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                    <p>Final year research project utilizing hardware-software integration to track and manage electronic waste efficiently.</p>
+                    <div class="project-links">
+                        <span class="status-label">In Development</span>
+                    </div>
+                </div>
 
-</div>
-        <div class="project-card">
-            <h3>Computer Lab Administration</h3>
-            <p>Configured 24-user thin client environments using Windows Server and Cisco switches.</p>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="experience">
-    <h2>Experience</h2>
-    <p><strong>ICT Instructor</strong></p>
-    <p>Delivered hands-on training in computer literacy and lab systems.</p>
-</section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="exp-item">
+                <h3>ICT Instructor | Practice Laboratory</h3>
+                <p><em>Lead Instructor & Lab Manager</em></p>
+                <ul>
+                    <li>Managed a 24-user laboratory utilizing Thin/Zero Client configurations and Cisco networking hardware.</li>
+                    <li>Taught computer hardware components and the Microsoft Office Suite to diverse student groups.</li>
+                    <li>Developed practical ICT assessments to improve student hands-on technical skills.</li>
+                </ul>
+            </div>
+        </section>
 
-    <button id="theme-toggle">Toggle Theme</button>
-    <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Have a project in mind or want to discuss ICT training? Send me a message!</p>
-    
-    <form action="https://formspree.io/f/myknrgvj" method="POST" class="contact-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send Message</button>
-    </form>
-</section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Have a project in mind or want to discuss ICT training? Send me a message!</p>
+            
+            <form action="https://formspree.io/f/myknrgvj" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <p>Connect with me on <a href="https://github.com/Bakubye">GitHub</a></p>
     </footer>
-    <script scr="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -28,3 +28,13 @@ let letter = "";
         setTimeout(type, 100); // Speed of typing
     }
 }());
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+document.getElementById("theme-toggle").onclick = () => {
+    document.body.classList.toggle("dark");
+};
